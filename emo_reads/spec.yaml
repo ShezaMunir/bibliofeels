@@ -1,0 +1,53 @@
+swagger: "2.0"
+info:
+  title: EmoReads
+  description: Get books based on your emotions
+  version: 1.0.0
+
+#defaults
+consumes:
+  - application/json
+produces:
+  - application/json
+
+paths:
+  /recommend:
+    get:
+      tags: [ Books ]
+      operationId: emo_reads.src.get_recommendations
+      summary: Get books
+      description: Fetches a list of books based on the user's emotion
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Returns json list
+          schema:
+            $ref: '#/definitions/Recommendations'
+        400:
+          description: Something went wrong
+
+
+definitions:
+  Recommendations:
+    type: array
+    items:
+      type: object
+      properties:
+        title:
+          type: string
+        author:
+          type: string
+        publication_date:
+          type: number
+        emotion:
+          type: object
+          properties: {}
+        image_url:
+          type: string
+        wikipedia_link:
+          type: string
+        genre:
+          type: number
+        summary:
+          type: string

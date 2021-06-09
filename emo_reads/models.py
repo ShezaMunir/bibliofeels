@@ -9,7 +9,7 @@ class Book(db.Model):
     publication_date = db.Column("Publication Date", db.String)
     emotion = db.Column("Emotion", db.String, primary_key=True)
     image_url = db.Column("Image URL", db.String, primary_key=True)
-    wikipedia_link = db.Column("Wikipedia Link", db.Integer, primary_key=True)
+    wikipedia_link = db.Column("Wikipedia Link", db.String, primary_key=True)
     genre = db.Column("Genre", db.String, primary_key=True)
     summary = db.Column("Summary", db.Text, primary_key=True)
 

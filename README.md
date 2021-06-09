@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 ## To run the server 
 - Windows
-```
+```cmd
 set FLASK_APP=emo_reads.setup.py:app
 flask run
 ```

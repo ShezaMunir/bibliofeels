@@ -4,7 +4,7 @@
   }
   
   body {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand", normal;
   }
 
   /* First Page */
@@ -13,7 +13,7 @@
     height: 100%;
   }
   
-  .background {
+  body {
     /* The image used */
     background-image: url("images/gradient-background.png");
     
@@ -28,3 +28,75 @@
 
     border-radius: 28px;
   }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+  }
+
+  .circles-container {
+    display: flex;
+    position: relative;
+  }
+
+  .circles-container img{
+    position: absolute;
+  }
+
+  .circles-container .big-purple {
+    width: 404px;
+    height: 395px;
+    left: -76px;
+    top: -66px;
+  }
+
+  .circles-container .small-purple {
+    width: 60px;
+    height: 58px;
+    left: 349px;
+    top: 419px;
+  }
+
+  .circles-container .big-yellow {
+    width: 261px;
+    height: 259px;
+    left: 85px;
+    top: 218px;
+  }
+
+  .circles-container .small-yellow {
+    width: 120px;
+    height: 115px;
+    left: 289px;
+    top: 145px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    width: 1128px;
+    height: 273px;
+    left: 328px;
+    top: 547px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 134.905px;
+    line-height: 169px;
+    text-align: center;
+    
+    color: #F9F0F0;
+  }
+  
+
+  
+
+  
+

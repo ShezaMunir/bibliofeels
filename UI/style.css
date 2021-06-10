@@ -79,20 +79,89 @@
     justify-content: space-between;
   }
 
-  header h1 {
+  .intro-content h1 {
+    position: absolute;
     width: 1128px;
     height: 273px;
-    left: 328px;
-    top: 547px;
+    left: 380px;
+    top: 350px;
     
-    font-family: Quicksand;
+    font-family: "Quicksand";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 134.905px;
-    line-height: 169px;
+    line-height: 196.5%;
+    /* or 265px */
+    
     text-align: center;
+
+    /* text-shadow: 2px 2px #a6a896; */
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
     
     color: #F9F0F0;
+  }
+
+
+  .intro-content .p1 {
+    
+
+    position: absolute;
+    width: 732px;
+    height: 48px;
+    left: 430px;
+    top: 530px;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 196.5%;
+    /* or 63px */
+    
+    text-align: center;
+    text-shadow: 1px 1px #abaca7;
+    
+    color: #FDF3F3;
+    
+  }
+
+  .intro-content .p2 {
+    
+
+    position: absolute;
+    width: 300px;
+    height: 48px;
+    left: 1110px;
+    top: 650px;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 196.5%;
+    /* or 63px */
+    
+    text-align: center;
+    text-shadow: 1px 1px #aba7ac;
+    
+    color: #4B1972;
+
+    /* background-image: url("images/yellow-button.png");
+    background-position: center;
+    background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* border-radius: 28px; */
+  }
+
+  .button {
+    position: absolute;
+    width: 220px;
+    height: 65px;
+    left: 1150px;
+    top: 650px;
+    
+    background: linear-gradient(0deg, rgba(251, 253, 139, 0.84), rgba(251, 253, 139, 0.84));
+    border-radius: 14px;
   }
   
 

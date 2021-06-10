@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Quicksand", normal;
+  }
+
+  /* First Page */
+
+  body, html {
+    height: 100%;
+  }
+  
+  body {
+    /* The image used */
+    background-image: url("images/gradient-background.png");
+    
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 28px;
+  }
+
+
+  .take-info p {
+    position: absolute;
+    width: 1049px;
+    height: 127px;
+    left: 196px;
+    top: 300px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 52px;
+    
+    color: #FFFFFF;
+    
+  }
+  
+
+  .take-info a {
+    position: absolute;
+    width: 173px;
+    height: 55px;
+    left: 949px;
+    top: 455px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    
+    color: #4B1972;
+
+
+}
+
+.button {
+    position: absolute;
+    width: 220px;
+    height: 65px;
+    left: 910px;
+    top: 450px;
+    
+    background: linear-gradient(0deg, rgba(251, 253, 139, 0.84), rgba(251, 253, 139, 0.84));
+    border-radius: 14px;
+}
+
+.text-box {
+    position: absolute;
+    width: 934px;
+    height: 74px;
+    left: 196px;
+    top: 355px;
+
+    background: linear-gradient(0deg, rgba(240, 233, 233, 0.8), rgba(240, 233, 233, 0.8)), #C4C4C4;
+
+}
+ 

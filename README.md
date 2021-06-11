@@ -43,13 +43,13 @@ python3 data/generate_db.py
 ## To run the server 
 - Windows
 ```cmd
-set FLASK_APP=bibliofeels.setup.py:app
+set FLASK_APP=run.py:app
 flask run
 ```
 
 - Linux
 ```bash
-export FLASK_APP=bibliofeels.setup.py:app
+export FLASK_APP=run.py:app
 flask run
 ```
 

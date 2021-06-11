@@ -11,12 +11,32 @@ produces:
   - application/json
 
 paths:
+  /:
+    get:
+      tags: [ Main Page ]
+      operationId: bibliofeels.src.index
+      summary: Get main page
+      produces:
+        - text/html
+      responses:
+        200:
+          description: Returns html of main page
+        400:
+          description: Something went wrong
+
   /recommend:
     get:
       tags: [ Books ]
       operationId: bibliofeels.src.get_recommendations
       summary: Get books
       description: Fetches a list of books based on the user's emotion
+      parameters:
+        - name: emotions
+          in: query
+          type: array
+          items:
+            type: string
+          required: true
       produces:
         - application/json
       responses:
@@ -34,9 +54,9 @@ definitions:
     items:
       type: object
       properties:
-        title:
-          type: string
         author:
+          type: string
+        title:
           type: string
         publication_date:
           type: number

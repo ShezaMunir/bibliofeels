@@ -1,4 +1,5 @@
 from bibliofeels.setup import db, ma
+from sqlalchemy.dialects import sqlite
 
 
 class Book(db.Model):
@@ -8,10 +9,10 @@ class Book(db.Model):
     author = db.Column("Author", db.String)
     title = db.Column("Book Title", db.String)
     publication_date = db.Column("Publication Date", db.String)
-    emotion = db.Column("Emotion", db.String)
+    emotion = db.Column("Emotion", sqlite.JSON)
     image_url = db.Column("Image URL", db.String)
     wikipedia_link = db.Column("Wikipedia Link", db.String)
-    genre = db.Column("Genre", db.String)
+    genre = db.Column("Genre", sqlite.JSON)
     summary = db.Column("Summary", db.Text)
 
 

@@ -157,6 +157,7 @@ header {
   height: 65px;
   left: 1150px;
   top: 650px;
+  padding-bottom: 10px;
   
   background: linear-gradient(0deg, rgba(251, 253, 139, 0.84), rgba(251, 253, 139, 0.84));
   border-radius: 14px;

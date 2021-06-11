@@ -11,42 +11,43 @@ const emotions = {
 };
 
 class InputView extends Component {
-  constructor() {
-    super();
-    this.state = {
-      choice: "",
-    };
-  }
-  // handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   // Todo: update book in the state
-  //   // Todo: make AJAX request to the backend to retrieve result
-  //   // Todo: route to the result page
-  // };
-  render() {
+  state = {
+    disabled: true,
+  };
+  handleChange = () => {
+    const selection = document.getElementById("emotion").value;
+    this.setState({
+      disabled: selection === "select a mood",
+    });
+  };
+  handleSubmit = (event) => {
     const { onSubmit } = this.props;
+    onSubmit(event, document.getElementById("emotion").value);
+    this.props.history.push("/");
+  };
+  render() {
     return (
       <div className="take-info">
         <p>what do you want to feel right now?</p>
-        <form
-          onSubmit={(event) => {
-            onSubmit(event, document.getElementById("emotion").value);
-            this.props.history.push("/");
-          }}
-          className="take-info"
-        >
+        <form onSubmit={this.handleSubmit} className="take-info">
           <div>
-            <select id="emotion">
+            <select id="emotion" onChange={this.handleChange}>
+              <option defaultValue="select a mood">select a mood</option>
               {Object.keys(emotions).map((emotion) => (
                 <option key={emotion} value={emotion}>
                   {emotion}
                 </option>
               ))}
             </select>
-
-            <button className="w3-btn w3-round-large w3-khaki" type="submit">
-              suggest
-            </button>
+            {this.state.disabled ? (
+              <button className="button" type="submit" disabled>
+                suggest
+              </button>
+            ) : (
+              <button className="button" type="submit">
+                suggest
+              </button>
+            )}
           </div>
         </form>
       </div>
@@ -54,5 +55,4 @@ class InputView extends Component {
   }
 }
 
-
-export default withRouter(InputView)
+export default withRouter(InputView);

@@ -160,6 +160,7 @@ header {
   
   background: linear-gradient(0deg, rgba(251, 253, 139, 0.84), rgba(251, 253, 139, 0.84));
   border-radius: 14px;
+  color: #4B1972;
 }
 
 .take-info p {
@@ -192,6 +193,7 @@ header {
   font-weight: 500;
   font-size: 40px;
   line-height: 50px;
+  text-decoration: none;
   
   color: #4B1972;
   

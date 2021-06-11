@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom'
 
 export default class LandingView extends Component {
   render() {
@@ -32,12 +33,11 @@ export default class LandingView extends Component {
               <div className="intro-content">
                 <h1>bibliofeels</h1>
                 <p className="p1">for the love of books.</p>
-                <a href="#" className="p2">
-                  {/**a place holder for the routing */}
+                <Link to='/input' className="p2">
                   <button className="w3-btn w3-round-large w3-khaki">
                     get started
                   </button>
-                </a>
+                </Link>
               </div>
             </header>
           </div>

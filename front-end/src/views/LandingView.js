@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Landing extends Component {
+export default class LandingView extends Component {
   render() {
     return (
       <div>
@@ -32,15 +32,12 @@ export default class Landing extends Component {
               <div className="intro-content">
                 <h1>bibliofeels</h1>
                 <p className="p1">for the love of books.</p>
-                
-                  <a href="#" className='p2'>
-                    {" "}
-                    {/**a place holder for the routing */}
-                    <button className="w3-button w3-round-large w3-khaki">
-                      get started
-                    </button>
-                  </a>
-                
+                <a href="#" className="p2">
+                  {/**a place holder for the routing */}
+                  <button className="w3-btn w3-round-large w3-khaki">
+                    get started
+                  </button>
+                </a>
               </div>
             </header>
           </div>

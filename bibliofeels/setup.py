@@ -4,7 +4,7 @@ import connexion
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 
-from emo_reads.config import BASE_DIR, DB_URI, APP_NAME
+from bibliofeels.config import BASE_DIR, DB_URI, APP_NAME
 
 # ===================================================================================
 #                              SETUP FLASK APP

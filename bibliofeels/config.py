@@ -6,4 +6,4 @@ import os
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 DB_URI = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite')
-APP_NAME = "EmoReads"
+APP_NAME = "bibliofeels"

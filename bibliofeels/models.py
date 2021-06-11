@@ -1,4 +1,4 @@
-from setup import db, ma
+from bibliofeels.setup import db, ma
 
 
 class Book(db.Model):
@@ -6,12 +6,13 @@ class Book(db.Model):
     __table_args__ = {"extend_existing": True}
     id = db.Column("ID", db.Integer, primary_key=True)
     author = db.Column("Author", db.String)
+    title = db.Column("Book Title", db.String)
     publication_date = db.Column("Publication Date", db.String)
-    emotion = db.Column("Emotion", db.String, primary_key=True)
-    image_url = db.Column("Image URL", db.String, primary_key=True)
-    wikipedia_link = db.Column("Wikipedia Link", db.String, primary_key=True)
-    genre = db.Column("Genre", db.String, primary_key=True)
-    summary = db.Column("Summary", db.Text, primary_key=True)
+    emotion = db.Column("Emotion", db.String)
+    image_url = db.Column("Image URL", db.String)
+    wikipedia_link = db.Column("Wikipedia Link", db.String)
+    genre = db.Column("Genre", db.String)
+    summary = db.Column("Summary", db.Text)
 
 
 class BookSchema(ma.SQLAlchemyAutoSchema):
@@ -19,6 +20,3 @@ class BookSchema(ma.SQLAlchemyAutoSchema):
         model = Book
         load_instance = True
         sqla_session = db.session
-
-
-db.create_all()

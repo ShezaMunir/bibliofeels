@@ -1,6 +1,6 @@
 swagger: "2.0"
 info:
-  title: EmoReads
+  title: bibliofeels
   description: Get books based on your emotions
   version: 1.0.0
 
@@ -14,7 +14,7 @@ paths:
   /recommend:
     get:
       tags: [ Books ]
-      operationId: emo_reads.src.get_recommendations
+      operationId: bibliofeels.src.get_recommendations
       summary: Get books
       description: Fetches a list of books based on the user's emotion
       produces:

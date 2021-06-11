@@ -14,11 +14,17 @@ def create_database():
                         "Author" TEXT,
                         "Book Title" TEXT,
                         "Publication Date" TEXT,
-                        "Genre" JSON,
-                        "Emotion" JSON,
+                        "Genre" TEXT,
                         "Summary" TEXT,
                         "Image URL" TEXT,
                         "Wikipedia Link" TEXT,
+                        "Sadness" REAL, 
+                        "Fear" REAL, 
+                        "Analytical" REAL, 
+                        "Joy" REAL, 
+                        "Anger" REAL, 
+                        "Confident" REAL, 
+                        "Tentative" REAL,
                         PRIMARY KEY("ID")
                     );'''
     conn = sqlite3.connect(DB_PATH)
@@ -48,6 +54,11 @@ def populate_db():
     df.rename(columns={'Emotions': 'Emotion'}, inplace=True)
     df["Emotion"] = df["Emotion"].apply(format_emotions_col)
     df["Genre"] = df["Genre"].apply(format_genre_col)
+
+    emotions = ["Sadness", "Fear", "Analytical", "Joy", "Anger", "Confident", "Tentative"]
+    for emotion in emotions:
+        df[emotion] = list(map(lambda x: json.loads(x).get(emotion.lower(), None), df.get("Emotion")))
+    df = df.drop(columns=["Emotion"])
     df.to_sql("Books", conn, if_exists="append", index_label="ID", index=True)
     conn.commit()
     conn.close()

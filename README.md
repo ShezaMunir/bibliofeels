@@ -35,16 +35,21 @@ python3 -m virtualenv venv
 pip install -r requirements.txt
 ```
 
+- Generate the database 
+```bash
+python3 data/generate_db.py
+```
+
 ## To run the server 
 - Windows
 ```cmd
-set FLASK_APP=emo_reads.setup.py:app
+set FLASK_APP=bibliofeels.setup.py:app
 flask run
 ```
 
 - Linux
 ```bash
-export FLASK_APP=emo_reads.setup.py:app
+export FLASK_APP=bibliofeels.setup.py:app
 flask run
 ```
 

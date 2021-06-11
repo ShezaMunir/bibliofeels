@@ -1,4 +1,4 @@
-from emo_reads.setup import app as application
+from bibliofeels.setup import app as application
 
 
 if __name__ == '__main__':

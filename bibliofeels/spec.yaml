@@ -1,0 +1,73 @@
+swagger: "2.0"
+info:
+  title: bibliofeels
+  description: Get books based on your emotions
+  version: 1.0.0
+
+#defaults
+consumes:
+  - application/json
+produces:
+  - application/json
+
+paths:
+  /:
+    get:
+      tags: [ Main Page ]
+      operationId: bibliofeels.src.index
+      summary: Get main page
+      produces:
+        - text/html
+      responses:
+        200:
+          description: Returns html of main page
+        400:
+          description: Something went wrong
+
+  /recommend:
+    get:
+      tags: [ Books ]
+      operationId: bibliofeels.src.get_recommendations
+      summary: Get books
+      description: Fetches a list of books based on the user's emotion
+      parameters:
+        - name: emotions
+          in: query
+          type: array
+          items:
+            type: string
+          required: true
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Returns json list
+          schema:
+            $ref: '#/definitions/Recommendations'
+        400:
+          description: Something went wrong
+
+
+definitions:
+  Recommendations:
+    type: array
+    items:
+      type: object
+      properties:
+        author:
+          type: string
+        title:
+          type: string
+        publication_date:
+          type: number
+        emotion:
+          type: object
+          properties: {}
+        image_url:
+          type: string
+        wikipedia_link:
+          type: string
+        genre:
+          type: number
+        summary:
+          type: string

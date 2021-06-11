@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+PRODID:-//zoom.us//iCalendar Event//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+CLASS:PUBLIC
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+TZURL:http://tzurl.org/zoneinfo-outlook/Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20210611T075208Z
+DTSTART;TZID=Asia/Kolkata:20210611T210000
+DTEND;TZID=Asia/Kolkata:20210611T223000
+SUMMARY:Introduction to Git & GitHub
+UID:20210611T075208Z-89591479778@fe80:0:0:0:14a5:61ff:fe48:5471ens5
+TZID:Asia/Kolkata
+DESCRIPTION:Kunal Kushwaha is inviting you to a scheduled Zoom meeting.\n
+ \nJoin Zoom Meeting\nhttps://us02web.zoom.us/w/89591479778?tk=-qp6VP19A4
+ o6mp_PB2xYSYxYLScYoyPb688HjEPDcYs.DQIAAAAU3BF94hZyTFVEZk9QUFF4V3BHMC11MD
+ hLbzBBAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=dEJjSGhjb20zUXFTOGdQdzNCcWtJdz09\
+ n\nMeeting ID: 895 9147 9778\nPasscode: 968913\nOne tap mobile\n+1408638
+ 0968\,\,89591479778#\,\,\,\,*968913# US (San Jose)\n+16468769923\,\,8959
+ 1479778#\,\,\,\,*968913# US (New York)\n\nDial by your location\n       
+  +1 408 638 0968 US (San Jose)\n        +1 646 876 9923 US (New York)\n 
+        +1 669 900 6833 US (San Jose)\n        +1 253 215 8782 US (Tacoma
+ )\n        +1 301 715 8592 US (Washington DC)\n        +1 312 626 6799 U
+ S (Chicago)\n        +1 346 248 7799 US (Houston)\nMeeting ID: 895 9147 
+ 9778\nPasscode: 968913\nFind your local number: https://us02web.zoom.us/
+ u/kd16A0nAmg\n\nJoin by Skype for Business\nhttps://us02web.zoom.us/skyp
+ e/89591479778\n\n
+LOCATION:https://us02web.zoom.us/w/89591479778?tk=-qp6VP19A4o6mp_PB2xYSYx
+ YLScYoyPb688HjEPDcYs.DQIAAAAU3BF94hZyTFVEZk9QUFF4V3BHMC11MDhLbzBBAAAAAAA
+ AAAAAAAAAAAAAAAAAAAAA&pwd=dEJjSGhjb20zUXFTOGdQdzNCcWtJdz09
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

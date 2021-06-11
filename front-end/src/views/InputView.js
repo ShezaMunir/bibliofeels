@@ -4,10 +4,10 @@ const emotions = {
   tentative: "tentative",
   bold: "confident",
   rational: "analytical",
-  sorrowful: "sandness",
+  sorrowful: "sadness",
   joyful: "joy",
-  spooked: "Fear",
-  frustrated: "Anger",
+  spooked: "fear",
+  frustrated: "anger",
 };
 
 class InputView extends Component {
@@ -21,9 +21,9 @@ class InputView extends Component {
     });
   };
   handleSubmit = (event) => {
-    const { onSubmit } = this.props;
-    onSubmit(event, document.getElementById("emotion").value);
-    this.props.history.push("/");
+    const { onSubmit, bookID } = this.props;
+    onSubmit(event, emotions[document.getElementById("emotion").value]);
+    this.props.history.push(`/book/${bookID}`);
   };
   render() {
     return (
@@ -31,8 +31,8 @@ class InputView extends Component {
         <p>what do you want to feel right now?</p>
         <form onSubmit={this.handleSubmit} className="take-info">
           <div>
-            <select id="emotion" onChange={this.handleChange}>
-              <option defaultValue="select a mood">select a mood</option>
+            <select id="emotion" onChange={this.handleChange} className='choose'>
+              <option defaultValue="select a mood" className='choose'>select a mood</option>
               {Object.keys(emotions).map((emotion) => (
                 <option key={emotion} value={emotion}>
                   {emotion}

@@ -8,13 +8,13 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![BiblioFeels - For The Love of Books](assets/banner.png?raw=true "Title")
 
-**Bibliofeels - made for the bibliophiles by the bibliophiles!**
+**Bibliofeels - _made for the bibliophiles by the bibliophiles!_**
 
 
 *We believe books are for everyone and for every emotion!
 Looking for something deep and reflective? We have a book for you!
 Want somehting that can help you escape reality? We have a book for you!
-Or maybe something spooky? Guess what, We have a book for you!
+Or maybe something spooky? Guess what, We have a book for you!*
 
 ## Inspiration
 

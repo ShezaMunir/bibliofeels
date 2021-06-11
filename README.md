@@ -55,4 +55,4 @@ flask run
 
 ### Recommendations can be found at the "/recommend" route
 
-Example: http://localhost:5000/recommend?emotions=happy,sad
+Example: http://localhost:5000/recommend?emotions=joy,analytical

@@ -30,16 +30,17 @@ BiblioFeels aims to recommend the best book to the best person(YES YOU!), along 
 ## How we built it
 We wanted the user's experience with the app to be as smooth as possible, so we started with an aesthetic, minimalistic design for the front end. 
 
-- how the database was built
-- how the backend was done 
-- how the backend was connected to frontend
+We used the CMU Book summary dataset(consisting of more than 16000 books), applied emotion analysis to the summary of all of these books after performing relevant data cleaning operations and added the emotions column to the dataset. Cover images of books were scraped and were also saved in the dataset as base64 strings. 
+
+After populating the database we built a React app to take input from the user of pass it on the backend app built using flask. The flask app queries the database that we produced above and returns the best match to the user along with relevant details to the user such as book title,  author, genre, summary, and a link to the wiki among other things.
+
 
 ## Challenges we ran into
 We worked on the following challenges:
 - The biggest challenge for this project was planning around the team's time zones. But we realized that when we decided on times well in advance, that problem seemed to subside. 
 - planning the workflow
 - learning new technologies
-- managing the database
+- On the NLP end, a major challenge was the unavailability of fine-grained emotion analysis models at the document/paragraph levels.
 
 
 ## Accomplishments that we're proud of

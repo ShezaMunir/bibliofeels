@@ -67,12 +67,12 @@ Features we think could make bibliofeels even better:
 
 - Clone this repo
 ```bash
-git clone https://github.com/ShezaMunir/OrientationHackathon.git
+git clone https://github.com/ShezaMunir/bibliofeels.git
 ```
 
 - Navigate to the project's root and start a virtual environment 
 ```bash
-cd OrientationHackathon
+cd bibliofeels
 ```
 
 - Create a virtual environment with python3

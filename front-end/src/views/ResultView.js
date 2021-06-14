@@ -6,11 +6,11 @@ export default class ResultView extends Component {
     return (
       <div>
         <div className="pg3-background">
-          <img
+          {/* <img
             className="bg-pg3"
             src="https://i.pinimg.com/originals/90/de/6a/90de6a722188fc9a9c0835db1f0e5500.jpg"
             alt="background"
-          />
+          /> */}
           <img
             className="book-img-holder"
             src="https://media.istockphoto.com/photos/book-picture-id147705864?k=6&m=147705864&s=612x612&w=0&h=Pp0LSPgc4Z8y94pCke0zxLzJv7Sa9mw3WaHcIdExaPc="

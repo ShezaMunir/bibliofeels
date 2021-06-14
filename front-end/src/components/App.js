@@ -37,7 +37,7 @@ export default class App extends Component {
             path="/input"
             render={() => <InputView onSubmit={this.handleSubmitEmotion} bookID={book.id}/>}
           />
-          <Route exact path={`/book/:${book.id}`} render={() => <ResultView book={book}/>} />
+          <Route exact path={`/result`} render={() => <ResultView book={book}/>} />
         </Switch>
       </div>
     );

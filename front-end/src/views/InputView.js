@@ -21,9 +21,9 @@ class InputView extends Component {
     });
   };
   handleSubmit = (event) => {
-    const { onSubmit, bookID } = this.props;
+    const { onSubmit } = this.props;
     onSubmit(event, emotions[document.getElementById("emotion").value]);
-    this.props.history.push(`/book/${bookID}`);
+    this.props.history.push(`/result`);
   };
   render() {
     return (
